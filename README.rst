@@ -43,16 +43,27 @@ Preamp was designed using LTSpice.
 Simulations
 -----------
 
-Transistor models are where downloaded from Bob Cordell's `site <http://www.cordellaudio.com/book/spice_models.shtml>`_
+Transistor models where downloaded from Bob Cordell's `site <http://www.cordellaudio.com/book/spice_models.shtml>`_
 
 Transient
 ~~~~~~~~~
 
-TBA
+.. image:: https://raw.githubusercontent.com/stovorov/GuitarPreampDesign/master/docs/tran_1khz.png
 
 AC
 ~~
 
-TBA
+Frequency response for flat settings:
 
+.. image:: https://raw.githubusercontent.com/stovorov/GuitarPreampDesign/master/docs/ac_sim.png
 
+Observed ripple at around 5.5kHz is due to ``PRESENCE`` control:
+
+.. image:: https://raw.githubusercontent.com/stovorov/GuitarPreampDesign/master/docs/presence_circuit.png
+
+The same circuit without 470p cap:
+
+.. image:: https://raw.githubusercontent.com/stovorov/GuitarPreampDesign/master/docs/presence_no_cap.png
+
+Achieved THD (normalised) is at the level of 0.47% - however, ideal op-amps models where used. On the other hand,
+this circuit is not intended to be hi-fi preamp and it's more than enough for guitar applications.
